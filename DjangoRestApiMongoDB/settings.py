@@ -86,9 +86,15 @@ WSGI_APPLICATION = 'DjangoRestApiMongoDB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'dogstuff_db',
-        'HOST': '127.0.0.1',
-        'PORT': 27017,
+        "CLIENT": {
+            'name': 'dogstuff',
+            'host': 'mongodb+srv://dean:mnbvcxz@cluster0.bwynb.mongodb.net/dogstuff?retryWrites=true&w=majority',
+            'username': 'dean',
+            'password': 'mnbvcxz',
+            'authMechanism': 'SCRAM-SHA-1',
+
+        }
+        
     }
 }
 
