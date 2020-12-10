@@ -140,5 +140,5 @@ STATIC_URL = '/static/'
 #Cross Origin Header
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8081',
+    'https://xenodochial-gates-5d7ea8.netlify.app',
 )
