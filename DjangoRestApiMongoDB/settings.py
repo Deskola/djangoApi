@@ -138,10 +138,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Cross Origin Header
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8081',
-)
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:8081',
+# )
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
